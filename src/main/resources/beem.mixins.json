@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "ladysnake.beem.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "BeehiveBlockEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

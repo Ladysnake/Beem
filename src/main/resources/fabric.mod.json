@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "beem",
+  "version": "${version}",
+
+  "name": "Beem",
+  "description": "A mod that displays light beams to help finding bee nests.",
+  "authors": [
+    "doctor4t"
+  ],
+  "contact": {
+    "sources": "https://github.com/Ladysnake/Beem",
+    "issues": "https://github.com/Ladysnake/Beem/issues",
+    "discord": "ladysnake.glitch.me/discord"
+  },
+  "license": "CC-BY-NC-SA 4.0",
+  "icon": "assets/beem/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ladysnake.beem.Beem"
+    ]
+  },
+  "mixins": [
+    "beem.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.7.2",
+    "fabric": "*",
+    "minecraft": "1.15.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
