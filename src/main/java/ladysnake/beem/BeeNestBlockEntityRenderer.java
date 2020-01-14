@@ -20,7 +20,7 @@ public class BeeNestBlockEntityRenderer extends BlockEntityRenderer<BeehiveBlock
 
     @Override
     public void render(BeehiveBlockEntity blockEntity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
-        if (blockEntity.getWorld().getBlockState(blockEntity.getPos()).getBlock().equals(Blocks.BEE_NEST)) {
+        if (blockEntity.getWorld().getBlockState(blockEntity.getPos()).getBlock().equals(Blocks.BEE_NEST) && Beem.beem) {
             long time = blockEntity.getWorld().getTime();
             BeaconBlockEntityRenderer.renderLightBeam(matrices, vertexConsumers, BEAM_TEXTURE, tickDelta, 1.0f, time, 0, 256, BEAM_COLOR.getColorComponents(), 0.25F, 0.35F);
             BeaconBlockEntityRenderer.renderLightBeam(matrices, vertexConsumers, BEAM_TEXTURE, tickDelta, 1.0f, time, 0, -256, BEAM_COLOR.getColorComponents(), 0.25F, 0.35F);
