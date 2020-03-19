@@ -1,9 +1,5 @@
 # Beem - Changelog
 
-### Beem 1.4 - 20w12a
-
-- Updated to Minecraft snapshot 20w12a
-
 ### Beem 1.3 - 20w09a
 
 - Updated to Minecraft snapshot 20w09a (thanks to Yuuki2012!)
