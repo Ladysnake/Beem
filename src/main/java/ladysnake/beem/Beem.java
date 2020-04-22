@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.event.client.ClientTickCallback;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.util.InputUtil;
+import net.minecraft.text.Style;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
@@ -30,7 +31,7 @@ public class Beem implements ClientModInitializer {
             while (TOGGLE_BEEM.wasPressed()) {
                 beem = !beem;
                 if (MinecraftClient.getInstance().player != null) {
-                    MinecraftClient.getInstance().player.addMessage(new TranslatableText("message.beem.toggled."+beem).formatted(Formatting.GOLD), false);
+                    MinecraftClient.getInstance().player.sendMessage(new TranslatableText("message.beem.toggled."+beem).setStyle(Style.field_24360.setColor(Formatting.GOLD)), false);
                 }
             }
         });
