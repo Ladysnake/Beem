@@ -31,7 +31,7 @@ public class Beem implements ClientModInitializer {
             while (TOGGLE_BEEM.wasPressed()) {
                 beem = !beem;
                 if (MinecraftClient.getInstance().player != null) {
-                    MinecraftClient.getInstance().player.sendMessage(new TranslatableText("message.beem.toggled."+beem).setStyle(Style.field_24360.setColor(Formatting.GOLD)), false);
+                    MinecraftClient.getInstance().player.sendMessage(new TranslatableText("message.beem.toggled."+beem).setStyle(Style.EMPTY.withColor(Formatting.GOLD)), false);
                 }
             }
         });
